@@ -1,0 +1,1 @@
+web: gunicorn emailfinder.wsgi --log-file -
