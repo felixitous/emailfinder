@@ -1,0 +1,26 @@
+<style>
+	ul { list-style-type: none; display: inline;}
+</style>
+
+<h1> Permutations </h1>
+<form action="/" method="post">
+    {% csrf_token %}
+    {{ form }}
+    <input type="submit" value="Submit" />
+</form>
+
+<ul>
+{% for value in permutations %}
+	<li> {{ value }} </li>
+{% endfor %}
+</ul>
+
+<ul>
+{% for value in valid %}
+	<li> {{ value }} </li>
+{% endfor %}
+</ul>
+
+
+
+<!-- {{ list }} -->

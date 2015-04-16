@@ -1,1 +1,1 @@
-web: gunicorn emailfinder.wsgi --log-file -
+web: gunicorn emailfinder.wsgi --log-file - --timeout=1000
